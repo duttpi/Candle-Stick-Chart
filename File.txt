@@ -1,0 +1,28 @@
+Trading using Crossover
+
+Question: Generating trade signals using crossover strategy
+
+Overview
+
+?	Crossover Strategy
+	•	Buy Signal: Short term moving average exceeds long term moving average
+	•	Sell Signal: Short term moving average falls below long term moving average
+
+?	Moving Average
+	•	Simple Moving Average has been used. The typical combination of short term MA and long-term MA is as below.
+		SMA	LMA
+		10	60
+		30	90
+		50	200
+	•	For the purpose of simplicity, a combination of 10-30 has been considered
+
+Tools used
+?	Python is used, with Bokeh as primary library
+?	Web browser- to display the output in HTML
+
+Steps
+?	Daily OHLC data downloaded from ‘AlphaVintage’ which consists of 100 data points. Here  OHLC data for Google(‘GOOG’) has been shown
+?	The data is then represented by Candle stick chart
+?	Moving average with window, SMA = 10, LMA = 30 is added in candle chart
+?	Volume chart is added as supporting tool
+?	Trade signal are displayed where signals are generated
